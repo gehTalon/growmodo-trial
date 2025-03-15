@@ -1,0 +1,376 @@
+/*
+Theme Name: Growmodo Trial
+Author: Reggie Dawal
+Description: Trial Test
+Version: 1.0
+*/
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap');
+
+/* Global Variables */
+:root {
+    --primary-color: #7a17ff; /* Main accent color */
+    --Absolute-white: #fff;
+    --Grey-10: #1A1A1A;
+    --dark-bg: #111; /* Dark background for header */
+    --light-text: #ffffff; /* Text color */
+    --hover-bg: rgba(255, 255, 255, 0.1); /* Nav hover effect */
+    --button-radius: 12px; /* Rounded corners */
+    --font-size-base: 18px;
+    --font-size-small: 14px;
+    --font-family-main: 'Urbanist', sans-serif;
+    --header-padding: 15px 0;
+    --Grey-15: #262626;
+    --Grey-08: #141414;
+    --Grey-60: #999;   
+    --Purple-60: #703BF7;
+}
+
+h1{
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 72px */
+}
+h2{   
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
+}
+h4{
+    
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+}
+p{
+    font-size: var(--font-size-base);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+}
+
+/* set default font size globally  */
+html {
+    font-size: var(--font-size-base);
+    font-family: var(--font-family-main);
+}
+
+
+body {
+    font-family: var(--font-family-main);
+    font-size: var(--font-size-base);
+    margin: 0;
+    padding: 0;
+    color: var(--light-text);
+    background: var(--dark-bg); /* Optional: For a dark theme */
+}
+
+.container {
+    max-width: 1597px; /* Set your desired max width */   
+    padding: 0px;
+}
+
+
+/* Announcement Bar */
+.announcement-bar {
+    background: var(--Grey-10);
+    color: white;
+    position: relative;
+    text-align: center;  
+    font-size: var(--font-size-base);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--Grey-15);
+
+}
+
+.announcement-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('http://localhost:10347/wp-content/themes/growmodo/assets/images/announcement-bar-bg.png') center center / cover no-repeat;
+    opacity: 0.2; /* Adjust this value to control transparency */
+    
+}
+
+.announcement-bar a {
+    color: #fff;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.close-announcement {
+    position: absolute;
+    right: 10px;   
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* Navbar */
+.main-navbar {
+    background-color: var(--Grey-10);
+    padding: 20px 0px;
+}
+
+.main-navbar a{
+    font-size: var(--font-size-base);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--Absolute-white);
+    text-decoration: none;
+}
+
+.navbar-brand .logo {
+    width: 160px;
+    height: auto;
+}
+
+.navbar-brand .brand-text {
+    font-weight: bold;
+    font-size: var(--font-size-base);
+    color: white;
+}
+
+/* Nav Menu */
+.navbar-nav .nav-link {
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Contact Us Button */
+.btn-outline-light {
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* Main Menu */
+
+ul#menu-main-menu li a{
+    font-size: var(--font-size-base);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--Absolute-white);
+    text-decoration: none;
+    padding: 14px 24px;
+    border: 1px solid var(--Grey-10);
+}
+
+ul#menu-main-menu li a:hover,
+ul#menu-main-menu li a.active {
+    border-radius: 10px;
+    border: 1px solid var(--Grey-15);
+    background: var(--Grey-08);
+}
+
+/* Footer */
+
+  .site-footer {
+    background: #111; /* Example background */
+    color: #fff;  
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .site-footer .footer-column:first-child {
+    flex: 0 0 423px; /* Prevent shrinking and growing, fixed width */
+    max-width: 423px;
+    margin-right: 80px;
+  }
+  .site-footer form.subscribe-form div.input-group{
+    border-radius: 12px;
+    border: 1px solid var(--Grey-15);
+    background: var(--Grey-08);
+    width: 423px;
+    display: flex;
+    padding: 18px 20px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+ }
+ .site-footer form.subscribe-form input{
+    width: 77%;
+ }
+  .site-footer form.subscribe-form button,
+  .site-footer form.subscribe-form input {
+    background-color: transparent;
+    box-shadow: none;
+    border: 0;
+    
+  }
+  
+  .site-footer .footer-inner {    
+    margin: 0 auto;
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px; /* For spacing between columns */
+   
+  }
+  
+  .site-footer .footer-column {
+    min-width: 150px;
+    flex: 1;
+  }
+  .site-footer .footer-column h4{
+    color: var(--Grey-60);
+    margin-bottom: 30px;
+  }
+
+  .site-footer .footer-column ul li{
+    padding-bottom: 20px;
+  }
+  
+  .site-footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: Urbanist;
+    font-size: var(--font-size-base);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: -0.108px;
+  }
+  
+
+  
+  .site-footer .footer-bottom {    
+    margin: 20px auto 0;
+    padding: 30px 0px;
+    background-color: var(--Grey-10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;    
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+ 
+  
+  .site-footer .social-icons a {
+    margin-left: 10px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .site-footer .footer-bottom span.copyright a{
+    margin-left: 38px;
+  }
+
+
+
+  /* Main Section */
+  section {
+    background: #121212; /* Dark background */
+   
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid var(--Grey-15);
+    border-bottom: 1px solid var(--Grey-15);
+  }
+.cta-section {
+    background: #121212; /* Dark background */
+   
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid var(--Grey-15);
+    border-bottom: 1px solid var(--Grey-15);
+  }
+  
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(http://localhost:10347/wp-content/themes/growmodo/assets/images/left-bg-2.png) left bottom no-repeat;
+    opacity: 1;
+    z-index: 0;
+}
+.cta-section::after {
+    content: '';
+    position: absolute;
+    bottom: -63px;
+    right: -92px;
+    width: 100%;
+    height: 100%;
+    background: url(http://localhost:10347/wp-content/themes/growmodo/assets/images/left-bg.png) right bottom no-repeat;
+    opacity: 1;
+    z-index: 0;
+}
+ .cta-section .container {
+    z-index: 1;
+ }
+
+ /* Section */
+ section .section-header div:first-child{
+    flex: 0 80%; /* Prevent shrinking and growing, fixed width */
+    
+ }
+
+ section .section-header .section-text p{
+    color: var(--Grey-60);
+ }
+  
+
+  
+  /* CTA Button */
+  .cta-button {
+    background: var(--Purple-60); /* Vibrant purple */
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 18px 24px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 10px;
+  }
+
+  .cta-button.transparent {
+    background: var(--Grey-10);
+    border: 1px solid var(--Grey-15);
+  }
+  
+  .cta-button:hover {
+    background: inherit;
+  }
+  
+  
