@@ -1,0 +1,91 @@
+
+.testimonials .section-content .swiper-wrapper .swiper-slide{
+  width: 512px;  
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--Grey-15);
+  background: var(--Grey-08);
+  margin-right: 30px;
+}
+
+.testimonials .section-header{
+  margin-bottom: 80px;
+}
+
+
+.testimonials .section-content .swiper-wrapper .swiper-slide h4{
+  margin-top: 30px;
+}
+.testimonials .section-content .swiper-wrapper .swiper-slide p{
+  color: var(--Absolute-white);
+  margin: 40px 0px;
+}
+
+.testimonials .testimonial-holder .testimonial-amenities{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 30px 0px;
+}
+
+.testimonials .testimonial-holder .testimonial-bottom-info{
+  display: flex  ;
+  flex-direction: row;
+  align-items: center;  
+  gap:12px;
+}
+.testimonials .testimonial-holder .testimonial-bottom-info .testimonial-name{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.testimonials .testimonial-holder .testimonial-bottom-info .testimonial-name span.name{
+  font-size: 20px;
+}
+.testimonials .testimonial-holder .testimonial-bottom-info .testimonial-name span.location{
+  color: var(--Grey-60);
+}
+.testimonials .testimonial-holder .testimonial-info img.rating{
+  width: 260px;
+}
+.testimonials .testimonial-holder img.testimonial-image{
+  width: 60px;
+}
+.testimonials .testimonial-holder .testimonial-info a.read-more{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  text-decoration: underline;
+  color: var(--Absolute-white);
+}
+.testimonials .testimonial-holder .testimonial-bottom-info .testimonial-price{
+  display: flex;
+        flex-direction: column;
+}
+.testimonials .testimonial-holder .testimonial-bottom-info .testimonial-price .testimonial-price-label{
+  color: var(--Grey-60)
+}
+.testimonials .testimonial-holder .testimonial-bottom-info .testimonial-price .testimonial-price-value{
+  font-size: 24px;
+  font-weight: 600;
+}
+.testimonials .testimonial-holder .testimonial-bottom-info .cta-button{
+  width: 279px;
+  text-align: center;
+}
+
+.testimonials  .testimonials-bottom-content{
+  border-top: 1px solid var(--Grey-15, #262626);
+  margin-top: 60px;
+  padding-top: 20px;
+}
+
+.testimonials .testimonials-pagination .testimonials-pagination-bullets{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--Grey-60);
+}
+.testimonials .testimonials-pagination .testimonials-pagination-bullets span.current-bullet{
+  color: var(--Absolute-white);
+}

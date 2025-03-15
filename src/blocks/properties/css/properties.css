@@ -1,0 +1,76 @@
+
+.properties .section-content .swiper-wrapper .swiper-slide{
+  width: 512px;  
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--Grey-15);
+  background: var(--Grey-08);
+  margin-right: 30px;
+}
+
+.properties .section-header{
+  margin-bottom: 80px;
+}
+
+.properties .section-content .swiper-wrapper .swiper-slide img{
+  width: 100%;
+}
+.properties .section-content .swiper-wrapper .swiper-slide h4{
+  margin-top: 30px;
+}
+.properties .section-content .swiper-wrapper .swiper-slide p{
+  color: var(--Grey-60);
+}
+
+.properties .property-holder .property-amenities{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 30px 0px;
+}
+
+.properties .property-holder .property-bottom-info{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  
+}
+.properties .property-holder .property-info a.read-more{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  text-decoration: underline;
+  color: var(--Absolute-white);
+}
+.properties .property-holder .property-bottom-info .property-price{
+  display: flex;
+        flex-direction: column;
+}
+.properties .property-holder .property-bottom-info .property-price .property-price-label{
+  color: var(--Grey-60)
+}
+.properties .property-holder .property-bottom-info .property-price .property-price-value{
+  font-size: 24px;
+  font-weight: 600;
+}
+.properties .property-holder .property-bottom-info .cta-button{
+  width: 279px;
+  text-align: center;
+}
+
+.properties  .properties-bottom-content{
+  border-top: 1px solid var(--Grey-15, #262626);
+  margin-top: 60px;
+  padding-top: 20px;
+}
+
+.properties .properties-pagination .properties-pagination-bullets{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--Grey-60);
+}
+.properties .properties-pagination .properties-pagination-bullets span.current-bullet{
+  color: var(--Absolute-white);
+}

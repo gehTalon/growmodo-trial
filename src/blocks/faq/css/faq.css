@@ -1,0 +1,91 @@
+
+.faq .section-content .swiper-wrapper .swiper-slide{
+  width: 512px;  
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--Grey-15);
+  background: var(--Grey-08);
+  margin-right: 30px;
+}
+
+.faq .section-header{
+  margin-bottom: 80px;
+}
+
+
+.faq .section-content .swiper-wrapper .swiper-slide h4{
+  margin-top: 30px;
+}
+.faq .section-content .swiper-wrapper .swiper-slide p{
+  color: var(--Absolute-white);
+  margin: 40px 0px;
+}
+
+.faq .faq-holder .faq-amenities{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 30px 0px;
+}
+
+.faq .faq-holder .faq-bottom-info{
+  display: flex  ;
+  flex-direction: row;
+  align-items: center;  
+  gap:12px;
+}
+.faq .faq-holder .faq-bottom-info .faq-name{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.faq .faq-holder .faq-bottom-info .faq-name span.name{
+  font-size: 20px;
+}
+.faq .faq-holder .faq-bottom-info .faq-name span.location{
+  color: var(--Grey-60);
+}
+.faq .faq-holder .faq-info img.rating{
+  width: 260px;
+}
+.faq .faq-holder img.faq-image{
+  width: 60px;
+}
+.faq .faq-holder .faq-info a.read-more{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  text-decoration: underline;
+  color: var(--Absolute-white);
+}
+.faq .faq-holder .faq-bottom-info .faq-price{
+  display: flex;
+        flex-direction: column;
+}
+.faq .faq-holder .faq-bottom-info .faq-price .faq-price-label{
+  color: var(--Grey-60)
+}
+.faq .faq-holder .faq-bottom-info .faq-price .faq-price-value{
+  font-size: 24px;
+  font-weight: 600;
+}
+.faq .faq-holder .faq-bottom-info .cta-button{
+  width: 279px;
+  text-align: center;
+}
+
+.faq  .faq-bottom-content{
+  border-top: 1px solid var(--Grey-15, #262626);
+  margin-top: 60px;
+  padding-top: 20px;
+}
+
+.faq .faq-pagination .faq-pagination-bullets{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--Grey-60);
+}
+.faq .faq-pagination .faq-pagination-bullets span.current-bullet{
+  color: var(--Absolute-white);
+}
